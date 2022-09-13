@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width">
     <title>Lab</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Hi</h1>
+    <div class="container">
+        <div>
+            <input type="file" onchange="downloadGraph(this)">
+        </div>
+        <div>
+            <canvas id="myChart" width="600px" height="300px"></canvas>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
