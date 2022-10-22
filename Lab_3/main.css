@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+}
+.input__a {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-bottom: 1vw;
+}
+
+.input__diap {
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+  margin-bottom: 1vw;
+}
+
+.diap__text {
+  margin-right: 4%;
+}
+
+.input__A {
+  margin-right: 5%;
+}
+
+.input__number {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 1vw;
+}
+
+.button__run {
+  display: flex;
+  margin: auto;
+  width: max-content;
+}
+
+.container__canvas {
+  max-width: 1000px;
+  display: flex;
+  margin: auto;
+}
+
+.text__urav {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.corni {
+  margin: auto;
+  max-width: 1000px;
+}

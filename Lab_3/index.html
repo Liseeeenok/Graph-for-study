@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lab</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="input__a">
+            <div>
+                a3: 
+                <input id="a3" type="text" placeholder="a3">
+            </div>
+            <div>
+                a2: 
+                <input id="a2" type="text" placeholder="a2">
+            </div>
+            <div>
+                a1: 
+                <input id="a1" type="text" placeholder="a1">
+            </div>
+            <div>
+                a0: 
+                <input id="a0" type="text" placeholder="a0">
+            </div>
+        </div>
+        <div class="input__diap">
+            <div class="diap__text">
+                Диапазон построения
+            </div>
+            <div class="input__A">
+                A: 
+                <input id="AA" type="text" placeholder="A">
+            </div>
+            <div>
+                B: 
+                <input id="BB" type="text" placeholder="B">
+            </div>
+        </div>
+        <div class="input__number">
+            <div>
+                Число шагов локализации:
+                <input id="number" type="text" placeholder="count">
+                <span id="error"></span>
+            </div>
+        </div>
+        <div class="button__run">
+            <button id="button__run">Построить график и найти корни</button>
+        </div>
+        <div class="text__urav">
+            <span>Исходное уравнение:</span>
+            <span id="urav"></span>
+        </div>
+        <div class="container__canvas">
+            <canvas id="myChart" class="canvas"></canvas>
+        </div>
+        <div class="corni" id="corni">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
