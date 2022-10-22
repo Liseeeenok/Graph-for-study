@@ -51,8 +51,6 @@ function createGraph() {
         listValues.push(i);
         listNameValues.push(result(i));
     }
-    console.log(listValues)
-    console.log(listNameValues)
 
     myChart = new Chart(ctx, {
         type: 'line',
@@ -84,24 +82,22 @@ function createGraph() {
     let text_corn = '<div>Корни:</div>';
     arrCorni.forEach(el => text_corn += '<div>'+el+'</div>')
     corni.innerHTML = text_corn;
-
-    console.log(text_corn);
 }
 
 function findCorni(start, end) {
     step = (end - start) / parseFloat(number.value);
     for (i = start; i < end; i += step) {
-
+        console.log(result(i), result(i+step))
         if ((result(i) * result(i + step)) < 0) {
             doubleDiv(i, i + step);
+        }
+        if (result(i) == 0) {
+            arrCorni.push(i); 
         }
     }
 }
 
 function doubleDiv(start, end) {
-    console.log('st', start, 'en', end);
-    console.log('deb ', end - start);
-    let count = 0;
     while (Math.abs(end-start) > 0.00000000001) {
         if ((result(start + (end-start)/2) * result(start)) > 0) {
             start = start + (end-start)/2;
@@ -111,11 +107,6 @@ function doubleDiv(start, end) {
                 return; 
             }
             end = end - (end-start)/2;
-        }
-        console.log('deb ', end - start);
-        count++;
-        if (count == 100) {
-            break;
         }
     }
     arrCorni.push(start + (end-start)/2);
