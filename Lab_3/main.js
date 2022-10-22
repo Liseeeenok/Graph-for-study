@@ -21,7 +21,7 @@ let arrCorni = [];
 button_run.addEventListener('click', chekNum);
 
 function chekNum() {
-    if ((a3.value == '') || (a2.value == '') || (a1.value == '') || (a0.value == '') || (left.value == '') || (right.value == '') || (number.value == '')) {
+    if ((a3.value == '') || (a2.value == '') || (a1.value == '') || (a0.value == '') || (left.value == '') || (right.value == '') || (number.value == '') || (left.value <= right.value)) {
         error.innerHTML = 'Введите все параметры корректно';
     } else {
         error.innerHTML = '';
