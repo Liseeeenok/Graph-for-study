@@ -1,0 +1,22 @@
+td {
+  text-align: center;
+  border: 1px solid;
+  width: 8vw;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.table {
+  margin: auto;
+  margin-top: 2vw;
+}
+
+.run_vch {
+  margin-top: 2vw;
+}
+
+.find_corn {
+  display: none;
+}
