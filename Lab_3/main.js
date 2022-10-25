@@ -21,7 +21,7 @@ let arrCorni = [];
 button_run.addEventListener('click', chekNum);
 
 function chekNum() {
-    if ((a3.value == '') || (a2.value == '') || (a1.value == '') || (a0.value == '') || (left.value == '') || (right.value == '') || (number.value == '') || (left.value >= right.value)) {
+    if ((a3.value == '') || (a2.value == '') || (a1.value == '') || (a0.value == '') || (left.value == '') || (right.value == '') || (number.value == '') || (parseFloat(left.value) >= parseFloat(right.value))) {
         error.innerHTML = 'Введите все параметры корректно';
     } else {
         error.innerHTML = '';
@@ -87,7 +87,6 @@ function createGraph() {
 function findCorni(start, end) {
     step = (end - start) / parseFloat(number.value);
     for (i = start; i < end; i += step) {
-        console.log(result(i), result(i+step))
         if ((result(i) * result(i + step)) < 0) {
             doubleDiv(i, i + step);
         }
